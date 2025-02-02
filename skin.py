@@ -13,7 +13,7 @@ st.set_page_config(page_title='تشخیص سرطان پوست - RoboAi', layout=
 model = load_model('model.h5')
 
 def show_page():
-    st.write("<h3 style='text-align: center; color: blue;'>تشخیص سرطان پوست 🩺</h3>", unsafe_allow_html=True)
+    st.write("<h4 style='text-align: center; color: blue;'>تشخیص سرطان پوست 🩺</h4>", unsafe_allow_html=True)
     st.write("<h6 style='text-align: center; color: black;'>Robo-Ai.ir طراحی و توسعه</h6>", unsafe_allow_html=True)
     st.link_button("Robo-Ai بازگشت به", "https://robo-ai.ir")
     container = st.container(border=True)
