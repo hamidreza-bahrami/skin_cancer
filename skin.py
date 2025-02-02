@@ -28,7 +28,7 @@ def show_page():
         st.write("<h5 style='text-align: center; color: gray;'>حمیدرضا بهرامی</h5>", unsafe_allow_html=True)
 
     image = st.file_uploader('آپلود تصویر', type=['jpg', 'jpeg'])
-    button = st.button('از این تصویر چی می فهمی؟')       
+    button = st.button('ارزیابی')       
     if image is not None:
         file_bytes = np.array(bytearray(image.read()), dtype= np.uint8)
         img = cv2.imdecode(file_bytes, 1)
